@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Combinator Selector</title>
+        <style>
+            div p { /* no 1 */
+                color: red;
+            }
+            div > p { /* no 2 */
+                background-color: yellow;
+            }
+            div + p { /* no 3 */
+                background-color: darkgray;
+            }
+            div ~ p { /* no 4 */
+                color: cyan;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>Selector ini mencocokkan semua elemen yang merupakan turunan dari elemen tertentu.</p>
+            <p>Selector ini memilih semua elemen yang merupakan anak dari elemen tertentu.</p>
+        </div>
+        <p>Selector ini memilih elemen yang berada tepat setelah elemen tertentu lainnya.</p>
+        <p>Selector ini memilih semua elemen yang merupakan saudara berikutnya dari elemen tertentu.</p>
+    </body>
+</html>
